@@ -1,0 +1,4 @@
+zones:
+    ajouter un nouveau livre
+    afficher la liste des livres existants
+    afficher les détails d'un livre sélectionné

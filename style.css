@@ -1,0 +1,80 @@
+:root{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:#707070;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header,footer{
+    background-color: #008870;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+main>div{
+    height: 100%;
+}
+#gestion{
+    display: flex;
+    flex-grow: 1;
+    flex-basis:60% ;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#ajout,#liste{
+    border: solid 1px grey;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+#ajout{
+    flex-grow: 1;
+}
+#ajouter{
+    display: flex;
+    flex-direction: column;
+}
+#liste{
+    text-align: center;
+    margin-top: 5px;
+    flex-grow: 1;
+}
+
+#details{
+    margin-left: 5px;
+    flex-grow: 1;
+    border: solid 1px grey;
+    background-color: #eeeeee;
+    border-radius: 0 10px 10px 0;
+    overflow: none;
+}
+#detail-image{
+    background-color: red;
+    text-align: center;
+}
+#detail-image>img{
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+}
+#liste li{
+    background-color: #707070;
+    flex-basis: 200px;
+    height: 300px;
+    margin: 5px;
+    border-radius: 5px;
+}

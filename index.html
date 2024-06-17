@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Bibliotheka</title>
+</head>
+<body>
+    <header>
+        <div>HEAD</div>
+    </header>
+    <main>
+        <div id="gestion">
+            <div id="ajout" style="padding: 10px;">
+                <form id="ajouter">
+                    <label for="titre">Nom</label><input type="text" name="titre"><br>
+                    <label for="auteurs">Auteur</label><input type="text" name="auteur"><br>
+                    <label for="image">Image</label><input type="file" name="image"><br>
+                    <label for="resume">Résumé</label><textarea name="resume" id="resume"></textarea>
+                    <input type="reset" value="reset">
+                    <input type="submit" value="valider">
+                </form>
+            </div>
+            <div id="liste">
+                <h2>Les livres enregistrés</h2>
+            </div>
+        </div>
+        <div id="details">
+            <div id="detail-image">
+                <img src="/img/bd1.jpg" style="width: 200px;" alt="">
+            </div>
+            <div id="infos">
+                <table>
+                    <tr><td style="width: 40%;">titre</td><td>Les Profs</td></tr>
+                    <tr><td>auteurs</td><td>auteurs</td></tr>
+                    <tr><td>isbn</td><td>isbn</td></tr>
+                    <tr><td>image</td><td>/img/bd1.jpg</td></tr>
+                    <tr><td>editeur</td><td>editeur</td></tr>
+                    <tr><td>date de publication</td><td>date de publication</td></tr>
+                    <tr><td>genre</td><td>genre</td></tr>
+                    <tr><td>resume</td><td>resume</td></tr>
+                    <tr><td>langue</td><td>langue</td></tr>
+                    <tr><td>nombre de pages</td><td>nombre de pages</td></tr>
+                    <tr><td>disponibilité</td><td>true/false</td></tr>
+                    <tr><td>etat</td><td>etat</td></tr>
+                    <tr><td>emplacement</td><td>emplacement</td></tr>
+                </table>
+            </div>
+            <button id="modifier">modifier</button>
+        </div>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
