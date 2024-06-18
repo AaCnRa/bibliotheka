@@ -1,17 +1,15 @@
 {
-    "livres":{
-        "titre":"1984",
-        "auteurs":["George Orwell"],
-        "isbn": "978-2-07-036822-8",
-        "image": "https://example.com/1984.jpg",
-        "editeur":"Gallimard",
-        "datePublication":"1949",
-        "genre":"Dystopie, Science-fiction",
-        "resume":"Un homme lutte contre un régime totalitaire oppressif dans un monde dystopique.",
-        "langue":"français",
-        "nombrePages":"368",
-        "disponibilite":"false",
-        "etat":"Endommagé",
-        "emplacement":"Réserves"
-    }
+    "titre":"1984",
+    "auteurs":["George Orwell"],
+    "isbn": "978-2-07-036822-8",
+    "image": "img/bd1.jpg",
+    "editeur":"Gallimard",
+    "datePublication":"1949",
+    "genre":"Dystopie, Science-fiction",
+    "resume":"Un homme lutte contre un régime totalitaire oppressif dans un monde dystopique.",
+    "langue":"français",
+    "nombrePages":"368",
+    "disponibilite":"false",
+    "etat":"Endommagé",
+    "emplacement":"Réserves"
 }

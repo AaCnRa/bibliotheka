@@ -2,7 +2,6 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 body{
-    /*height: 100vh;*/
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -35,35 +34,57 @@ main>div{
 }
 #liste{
     display: flex;
-    flex-grow: 1;
-    flex-basis:60% ;
+    flex-basis:70% ;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    overflow-y: scroll;
 }
 #ajout,#liste{
     border: solid 1px grey;
     background-color: #eeeeee;
-    border-radius: 10px;
 }
-#liste{
-    text-align: center;
-    align-items: center;
-    border-radius: 10px 0 0 10px;
-    flex-grow: 2;
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+}
+#liste>ul>li{
+    background-color: #707070;
+    flex-basis: 200px;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+#liste>ul>li:hover{
+    scale: 1.05;
 }
 .items{
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-between;
+    align-items: center;
 }
 .thumbnails{
-    max-width: 200px;
+    /*max-width: 150px;*/
+    width: 100%;
+}
+.items button{
     width: 100%;
 }
 
+#gestion{
+    flex-basis: 30%;
+}
 #details{
     margin-left: 5px;
-    border: solid 1px grey;
+    border: solid 1px #808080;
     background-color: #eeeeee;
     border-radius: 0 10px 0 0;
     overflow: none;
@@ -87,6 +108,12 @@ main>div{
 }
 table{
     width: 100%;
+    border-spacing: 0;
+}
+table td{
+    border: #808080 solid;
+    border-width: 0 0 1px 0;
+
 }
 #ajout{
     margin-left: 5px;
@@ -104,23 +131,6 @@ table{
 #image-ajout{
     max-width: 200px;
 }
-
-ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style: none;
-    padding-left: 0;
-}
-#liste>ul>li{
-    background-color: #707070;
-    flex-basis: 200px;
-    height: fit-content;
-    margin: 5px;
-    border-radius: 5px;
-    transition: 0.1s;
-}
-#liste>ul>li:hover{
-    scale: 1.05;
+.col1{
+    width: 40%;
 }
