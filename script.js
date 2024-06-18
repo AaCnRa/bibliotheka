@@ -9,13 +9,15 @@ document.addEventListener("DOMContentLoaded", function(){
     liste.appendChild(ul);
     for(var i=1;i<=50;i++){
         var li = document.createElement('li');
+        var button =  document.createElement('button');
         var img = document.createElement('img');
         
+        button.innerText="Voir plus";
         li.classList.add('items');
         img.src ='img/bd1.jpg';
         img.classList.add('thumbnails');
         li.appendChild(img);
-        li.append("Livre "+i);
+        /*li.appendChild(button);*/
         li.classList.add('books');
         ul.appendChild(li);
     }
