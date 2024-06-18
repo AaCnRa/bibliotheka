@@ -4,8 +4,8 @@ Bibliotheka is the name I gave to my personal work at the web development exam.
     1. Créer une interface utilisateur avec HTML et CSS pour permettre à l'utilisateur d'intéragir avec la bibliothèque.
     Zones pour AJOUTER un nouveau livre, afficher la LISTE des livres, afficher les DÉTAILS d'un livre sélectionné.
 
-
     2. Assurer que les champs de saisie pour ajouter ou mettre à jour un livre sont validés avant d'ajouter ou de modifier des données.
+
 
     3. événements JS pour géer les intéractions de l'utilisateur avec l'interface
 

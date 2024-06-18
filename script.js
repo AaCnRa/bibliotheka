@@ -67,26 +67,38 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
 
+    /* lister les livres enregistrés */
 
-    const liste =  document.getElementById('liste');
-    const ul =  document.createElement('ul');
-    liste.appendChild(ul);
-    for(var i=1;i<=12;i++){
-        var li = document.createElement('li');
-        var intern =  document.createElement('a');
-        var img = document.createElement('img');
-        
-        intern.innerText="Détails";
-        intern.setAttribute('href',"#details")
-        li.classList.add('items');
-        img.src ='img/bd1.jpg';
-        img.classList.add('thumbnails');
-        li.appendChild(img);
-        li.appendChild(intern);
-        li.classList.add('books');
-        ul.appendChild(li);
+    fetch('livres.json')
+    .then(response => response.json())
+    .then(data => list(data))
+    .catch(error => console.error('Erreur lors de la lecture du fichier JSON:', error));
+
+    function list(data){
+        const listEntries = Object.entries(data);
+        var liste =  document.getElementById('liste');
+        var ul =  document.createElement('ul');
+        liste.appendChild(ul);
+
+        for(let i of listEntries){
+            var li = document.createElement('li');
+            var intern =  document.createElement('a');
+            var img = document.createElement('img');
+            
+            intern.innerText="Détails";
+            intern.setAttribute('href',"#details")
+            li.classList.add('items');
+            console.log(i);
+            img.src =i[1].image;
+            img.classList.add('thumbnails');
+            li.appendChild(img);
+            li.appendChild(intern);
+            li.classList.add('books');
+            ul.appendChild(li);
+        }
+
     }
-
+    
     /*
     loadJson('model.json').then(data => console.log(data)).catch(error => console.error('Erreur lors du chargement du fichier JSON:',error));
     */
