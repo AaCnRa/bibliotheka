@@ -9,17 +9,31 @@
 </head>
 <body>
     <header>
-        <div>HEAD</div>
+        <h1>BIBLIOTHEKA</h1>
     </header>
     <main>
         <div id="gestion">
             <div id="ajout" style="padding: 10px;">
                 <form id="ajouter">
-                    <label for="titre">Nom</label><input type="text" name="titre"><br>
-                    <label for="auteurs">Auteur</label><input type="text" name="auteur"><br>
-                    <label for="image">Image</label><input type="file" name="image"><br>
-                    <label for="resume">Résumé</label><textarea name="resume" id="resume"></textarea>
+                    <label for="titre">Titre</label><input type="text" name="titre" value="1984" required><br>
+                    <label for="auteurs">Auteur</label><input type="text" name="auteur" value="George Orwell"><br>
+                    <label for="isbn">Isbn</label><input type="text" name="isbn" id="isbn" value="978-2-07-036822-8" pattern="\d+-\d+-\d+-\d+(-\d+)?" placeholder="X-X-X-X-X ou X-X-X-X (où X est un nombre)"><br>
+                    <label for="image">Image</label><input type="image" name="image" id="image-ajout" src="/img/bd1.jpg"><br>
+                    <label for="editeur">Éditeur</label><input type="text" name="editeur" id="editeur" value="Gallimard"><br>
+                    <label for="datePublication">Date de publication</label><input type="number" name="datePublication" id="datePublication" value="1949"><br>
+                    <details open>
+                        <summary><label for="genre">Genre</label></summary>
+                        <fieldset id="genre">
+                            <input type="checkbox" name="genre" id="comedie" value="comedie"><label for="comedie">Comédie</label><br>
+                            <input type="checkbox" name="genre" id="dystopie" value="dystopie" checked><label for="dystopie">Dystopie</label><br>
+                            <input type="checkbox" name="genre" id="romance" value="romance"><label for="romance">Romance</label><br>
+                            <input type="checkbox" name="genre" id="sci-fi" value="sci-fi" checked><label for="sci-fi">Science-fiction</label><br>
+                            <input type="checkbox" name="genre" id="tragedie" value="tragedie"><label for="tragedie">Tragédie</label><br>
+                        </fieldset>
+                    </details>
+                    <label for="resume">Résumé</label><textarea name="resume" id="resume">Un homme lutte contre un régime totalitaire oppressif dans un monde dystopique.</textarea>
                     <input type="reset" value="reset">
+                    
                     <input type="submit" value="valider">
                 </form>
             </div>
@@ -29,7 +43,7 @@
         </div>
         <div id="details">
             <div id="detail-image">
-                <img src="/img/bd1.jpg" style="width: 200px;" alt="">
+                <img src="/img/bd1.jpg" alt="Les Profs">
             </div>
             <div id="infos">
                 <table>

@@ -2,19 +2,30 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 body{
-    background-color:#707070;
-    height: 100vh;
+    /*height: 100vh;*/
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
+
 header,footer{
-    background-color: #008870;
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#bb0022;
+    color: #fff;
+    font-size: x-large;
 }
 main{
     flex-grow: 1;
     display: flex;
     flex-direction: row;
     margin: 5px;
+    width: 100vw;
+    max-width: 1524px;
 }
 main>div{
     height: 100%;
@@ -38,10 +49,22 @@ main>div{
     display: flex;
     flex-direction: column;
 }
+#image-ajout{
+    max-width: 200px;
+}
 #liste{
     text-align: center;
+    align-items: center;
     margin-top: 5px;
     flex-grow: 1;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.thumbnails{
+    max-width: 100px;
 }
 
 #details{
@@ -51,12 +74,22 @@ main>div{
     background-color: #eeeeee;
     border-radius: 0 10px 10px 0;
     overflow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#details>button{
+    width: 100%;
+    margin: 10px;
 }
 #detail-image{
-    background-color: red;
+    width: 50%;
     text-align: center;
 }
 #detail-image>img{
+    width: 100%;
+}
+#infos{
     width: 100%;
 }
 table{
@@ -71,10 +104,10 @@ ul{
     list-style: none;
     padding-left: 0;
 }
-#liste li{
+#liste>ul>li{
     background-color: #707070;
     flex-basis: 200px;
-    height: 300px;
+    height: 250px;
     margin: 5px;
     border-radius: 5px;
 }
