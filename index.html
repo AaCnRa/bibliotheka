@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Bibliotheka</title>
 </head>
@@ -12,8 +12,37 @@
         <h1>BIBLIOTHEKA</h1>
     </header>
     <main>
+        <div id="liste">
+            <h2>Les livres enregistrés</h2>
+        </div>
+
         <div id="gestion">
+            <div id="details">
+                <h2>Détails</h2>
+                <div id="detail-image">
+                    <img src="img/bd1.jpg" alt="Les Profs">
+                </div>
+                <div id="infos">
+                    <table>
+                        <tr><td style="width: 40%;">titre</td><td>Les Profs</td></tr>
+                        <tr><td>auteurs</td><td>auteurs</td></tr>
+                        <tr><td>isbn</td><td>isbn</td></tr>
+                        <tr><td>image</td><td>/img/bd1.jpg</td></tr>
+                        <tr><td>éditeur</td><td>editeur</td></tr>
+                        <tr><td>date de publication</td><td>date de publication</td></tr>
+                        <tr><td>genre</td><td>genre</td></tr>
+                        <tr><td>résumé</td><td>resume</td></tr>
+                        <tr><td>langue</td><td>langue</td></tr>
+                        <tr><td>nombre de pages</td><td>nombre de pages</td></tr>
+                        <tr><td>disponibilité</td><td>true/false</td></tr>
+                        <tr><td>état</td><td>etat</td></tr>
+                        <tr><td>emplacement</td><td>emplacement</td></tr>
+                    </table>
+                </div>
+                <button id="modifier">modifier</button>
+            </div>
             <div id="ajout" style="padding: 10px;">
+                <h2>Nouveau livre</h2>
                 <form id="ajouter">
                     <label for="titre">Titre</label><input type="text" name="titre" value="1984" required><br>
                     <label for="auteurs">Auteur</label><input type="text" name="auteur" value="George Orwell"><br>
@@ -21,48 +50,32 @@
                     <label for="image">Image</label><input type="image" name="image" id="image-ajout" src="/img/bd1.jpg"><br>
                     <label for="editeur">Éditeur</label><input type="text" name="editeur" id="editeur" value="Gallimard"><br>
                     <label for="datePublication">Date de publication</label><input type="number" name="datePublication" id="datePublication" value="1949"><br>
-                    <details open>
-                        <summary><label for="genre">Genre</label></summary>
-                        <fieldset id="genre">
-                            <input type="checkbox" name="genre" id="comedie" value="comedie"><label for="comedie">Comédie</label><br>
-                            <input type="checkbox" name="genre" id="dystopie" value="dystopie" checked><label for="dystopie">Dystopie</label><br>
-                            <input type="checkbox" name="genre" id="romance" value="romance"><label for="romance">Romance</label><br>
-                            <input type="checkbox" name="genre" id="sci-fi" value="sci-fi" checked><label for="sci-fi">Science-fiction</label><br>
-                            <input type="checkbox" name="genre" id="tragedie" value="tragedie"><label for="tragedie">Tragédie</label><br>
-                        </fieldset>
-                    </details>
+                    <label for="genre">Genre</label><fieldset id="genre">
+                        <input type="checkbox" name="genre" id="comedie" value="comedie"><label for="comedie">Comédie</label><br>
+                        <input type="checkbox" name="genre" id="dystopie" value="dystopie" checked><label for="dystopie">Dystopie</label><br>
+                        <input type="checkbox" name="genre" id="romance" value="romance"><label for="romance">Romance</label><br>
+                        <input type="checkbox" name="genre" id="sci-fi" value="sci-fi" checked><label for="sci-fi">Science-fiction</label><br>
+                        <input type="checkbox" name="genre" id="tragedie" value="tragedie"><label for="tragedie">Tragédie</label><br>
+                    </fieldset>
                     <label for="resume">Résumé</label><textarea name="resume" id="resume">Un homme lutte contre un régime totalitaire oppressif dans un monde dystopique.</textarea>
+                    <label for="langue">Langue</label><fieldset>
+                        <input type="radio" name="langue" id="en" value="en"><label for="en">Anglais</label><br>
+                        <input type="radio" name="langue" id="fr" value="fr"><label for="fr">Français</label><br>
+                    </fieldset><br>
+                    <label for="nombrePages">Nombre de pages</label><input type="number" name="page" id="page-number" value="368"><br>
+                    <label for="disponibilite">Disponibilité</label><input type="checkbox" name="disponibilite" id="yes" checked><br>
+                    <label for="etat">État</label><fieldset>
+                        <input type="radio" name="etat" id="neuf" value="neuf"><label for="neuf">neuf</label><br>
+                        <input type="radio" name="etat" id="endommage" value="endommage" checked><label for="endommage">Endommagé</label>
+                    </fieldset><br>
+                    <label for="emplacement">Emplacement</label><fieldset>
+                        <input type="radio" name="emplacement" id="reserves" value="reserves" required><label for="reserves">Réserves</label><br>
+                        <input type="radio" name="emplacement" id="reserves" value="reserves" required><label for="reserves">Réserves</label><br>
+                    </fieldset><br>
                     <input type="reset" value="reset">
-                    
                     <input type="submit" value="valider">
                 </form>
             </div>
-            <div id="liste">
-                <h2>Les livres enregistrés</h2>
-            </div>
-        </div>
-        <div id="details">
-            <div id="detail-image">
-                <img src="/img/bd1.jpg" alt="Les Profs">
-            </div>
-            <div id="infos">
-                <table>
-                    <tr><td style="width: 40%;">titre</td><td>Les Profs</td></tr>
-                    <tr><td>auteurs</td><td>auteurs</td></tr>
-                    <tr><td>isbn</td><td>isbn</td></tr>
-                    <tr><td>image</td><td>/img/bd1.jpg</td></tr>
-                    <tr><td>editeur</td><td>editeur</td></tr>
-                    <tr><td>date de publication</td><td>date de publication</td></tr>
-                    <tr><td>genre</td><td>genre</td></tr>
-                    <tr><td>resume</td><td>resume</td></tr>
-                    <tr><td>langue</td><td>langue</td></tr>
-                    <tr><td>nombre de pages</td><td>nombre de pages</td></tr>
-                    <tr><td>disponibilité</td><td>true/false</td></tr>
-                    <tr><td>etat</td><td>etat</td></tr>
-                    <tr><td>emplacement</td><td>emplacement</td></tr>
-                </table>
-            </div>
-            <button id="modifier">modifier</button>
         </div>
     </main>
     <footer>

@@ -7,6 +7,9 @@ body{
     align-items: center;
     flex-direction: column;
 }
+h2{
+    text-align: center;
+}
 
 header,footer{
     width: 100%;
@@ -24,13 +27,13 @@ main{
     display: flex;
     flex-direction: row;
     margin: 5px;
-    width: 100vw;
+    width: 100%;
     max-width: 1524px;
 }
 main>div{
     height: 100%;
 }
-#gestion{
+#liste{
     display: flex;
     flex-grow: 1;
     flex-basis:60% ;
@@ -42,21 +45,11 @@ main>div{
     background-color: #eeeeee;
     border-radius: 10px;
 }
-#ajout{
-    flex-grow: 1;
-}
-#ajouter{
-    display: flex;
-    flex-direction: column;
-}
-#image-ajout{
-    max-width: 200px;
-}
 #liste{
     text-align: center;
     align-items: center;
-    margin-top: 5px;
-    flex-grow: 1;
+    border-radius: 10px 0 0 10px;
+    flex-grow: 2;
 }
 .items{
     display: flex;
@@ -70,10 +63,9 @@ main>div{
 
 #details{
     margin-left: 5px;
-    flex-grow: 1;
     border: solid 1px grey;
     background-color: #eeeeee;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 0 0;
     overflow: none;
     display: flex;
     flex-direction: column;
@@ -95,6 +87,22 @@ main>div{
 }
 table{
     width: 100%;
+}
+#ajout{
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 0 0 10px 0;
+    flex-grow: 1;
+}
+#ajouter{
+    display: flex;
+    flex-direction: column;
+}
+#yes{
+    align-self: flex-start;
+}
+#image-ajout{
+    max-width: 200px;
 }
 
 ul{

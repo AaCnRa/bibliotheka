@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const liste =  document.getElementById('liste');
     const ul =  document.createElement('ul');
     liste.appendChild(ul);
-    for(var i=1;i<=50;i++){
+    for(var i=1;i<=24;i++){
         var li = document.createElement('li');
         var button =  document.createElement('button');
         var img = document.createElement('img');
