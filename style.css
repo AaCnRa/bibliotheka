@@ -36,11 +36,10 @@ main>div{
     display: flex;
     flex-basis:70% ;
     flex-direction: column;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
     text-align: center;
     align-items: center;
     border-radius: 10px 0 0 10px;
-    overflow-y: scroll;
 }
 #ajout,#liste{
     border: solid 1px grey;
@@ -53,6 +52,7 @@ ul{
     justify-content: space-evenly;
     list-style: none;
     padding-left: 0;
+    overflow-y: auto;
 }
 #liste>ul>li{
     /*border:groove 1px;*/

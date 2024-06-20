@@ -48,9 +48,9 @@
     },
 
     "livre4":{
-        "titre":"test",
+        "titre":"test1",
         "auteurs":["test"],
-        "isbn": "x-x-x-x-x",
+        "isbn": "x-x-x-x-6",
         "image": "img/bd4.jpg",
         "editeur":"test",
         "datePublication":"test",
@@ -61,6 +61,38 @@
         "disponibilite":"bool",
         "etat":"test",
         "emplacement":"test"
+    },
+
+    "livre5":{
+        "titre":"test2",
+        "auteurs":["test"],
+        "isbn": "x-x-x-x-6",
+        "image": "img/bd5.jfif",
+        "editeur":"test",
+        "datePublication":"test",
+        "genre":"test",
+        "resume":"Un résumé",
+        "langue":"langue",
+        "nombrePages":"X",
+        "disponibilite":"bool",
+        "etat":"test",
+        "emplacement":"test"
+    },
+
+    "livre6":{
+        "titre":"Le Mystère du Temps",
+        "auteurs":["Frits Jonker","Eric Heuvel"],
+        "isbn": "",
+        "image": "img/bd6.jfif",
+        "editeur":"",
+        "datePublication":"",
+        "genre":"",
+        "resume":"",
+        "langue":"français",
+        "nombrePages":"",
+        "disponibilite":"",
+        "etat":"âgé",
+        "emplacement":""
     }
 
 }
