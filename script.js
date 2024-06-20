@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function(){
             div.appendChild(img);
 
             basics.innerHTML = `<label>Titre:</label> ${i[1].titre}<br>
-            <label>Titre:</label> ${i[1].auteurs}`;
+            <label>Auteur:</label> ${i[1].auteurs}`;
             intern.innerText="Détails";
             intern.setAttribute('href',"#details")
             console.log(i);
