@@ -55,15 +55,24 @@ ul{
     padding-left: 0;
 }
 #liste>ul>li{
-    background-color: #707070;
+    /*border:groove 1px;*/
+    box-shadow: 0 0  2px 1px;
+    background-color: transparent /*#707070*/;
     flex-basis: 200px;
     height: auto;
     margin: 5px;
     border-radius: 5px;
     transition: 0.1s;
+
+    div{
+        flex-grow: 1;
+        align-content: center;
+        min-height: 327px;
+    }
 }
 #liste>ul>li:hover{
-    scale: 1.05;
+    /*scale: 1.05;*/
+    box-shadow: 0 0 2px 2px;
 }
 .items{
     display: flex;

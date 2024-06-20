@@ -45,5 +45,22 @@
         "disponibilite":"false",
         "etat":"Endommagé",
         "emplacement":"Réserves"
+    },
+
+    "livre4":{
+        "titre":"test",
+        "auteurs":["test"],
+        "isbn": "x-x-x-x-x",
+        "image": "img/bd4.jpg",
+        "editeur":"test",
+        "datePublication":"test",
+        "genre":"test",
+        "resume":"Un résumé",
+        "langue":"langue",
+        "nombrePages":"X",
+        "disponibilite":"bool",
+        "etat":"test",
+        "emplacement":"test"
     }
+
 }

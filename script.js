@@ -6,11 +6,11 @@ async function loadJson(url){
 
 document.addEventListener("DOMContentLoaded", function(){
     /* chargement du modèle depuis model.json */
-    fetch('model.json')
+    /*fetch('model.json')
     .then(response => response.json())
     .then(data => displayData(data))
     .catch(error => console.error('Erreur lors de la lecture du fichier JSON:', error));
-
+    */
     const detailImage = document.getElementById('detail-image');
     const detImg = document.createElement('img');
     const table = document.createElement('table');
@@ -21,11 +21,13 @@ document.addEventListener("DOMContentLoaded", function(){
         const entries= Object.entries(userData);
         const detailsDiv =  document.getElementById('details');
 
+        table.innerHTML="";
         table.style.textWrap = "wrap";
         infos.appendChild(table);
         detailImage.appendChild(detImg);
         detImg.src = userData.image;
-        
+
+        detailImage.style.width= detImg.width>=detImg.height?"100%":"50%";
         for(let entry of entries){
             var row = document.createElement('tr');
             var col1 = document.createElement('td');
@@ -81,20 +83,31 @@ document.addEventListener("DOMContentLoaded", function(){
         liste.appendChild(ul);
 
         for(let i of listEntries){
+            var div = document.createElement('div');
             var li = document.createElement('li');
             var intern =  document.createElement('a');
             var img = document.createElement('img');
+            var basics = document.createElement('p');
             
+            ul.appendChild(li);
+            li.appendChild(div);
+            li.appendChild(basics);
+            /*li.appendChild(intern);*/
+            div.appendChild(img);
+
+            basics.innerHTML = `<label>Titre:</label> ${i[1].titre}<br>
+            <label>Titre:</label> ${i[1].auteurs}`;
             intern.innerText="Détails";
             intern.setAttribute('href',"#details")
-            li.classList.add('items');
             console.log(i);
             img.src =i[1].image;
+
+            li.classList.add('items');
+            basics.style.textAlign ="left"
             img.classList.add('thumbnails');
-            li.appendChild(img);
-            li.appendChild(intern);
             li.classList.add('books');
-            ul.appendChild(li);
+            
+            li.addEventListener('click',function(){displayData(i[1])})
         }
 
     }
